@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floanimadex</title>
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Proyecto/imagenes/fo_2.0.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+.login-card {
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 90%;
+    object-fit: contain;
+}
+.brand-name {
+    color: #1a793a;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #4CAF50;
+    border: none;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#bottone1 a {
+    color: black;
+    text-decoration: none;
+}
+#bottone1:hover {
+ box-shadow: 7px 5px 56px -14px #74ff02;
+}
+#bottone1:active {
+ transform: scale(1.97);
+ box-shadow: 7px 5px 56px -10px #e5ff00;
+}
+    </style>
+</head>
+<body>
+    <main class="login-card">
+        <div class="logo">
+            <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+        </div>
+        <h1 class="brand-name">Floanimadex</h1>
+        <div class="button-group">
+            <button id="bottone1"><a href="../Proyecto/Floanimadex - Inicio de sesión y registro.html"><strong><b>Inicio Sesión</b></strong></a></button>
+        </div>
+    </main>
+</body>
+</html>

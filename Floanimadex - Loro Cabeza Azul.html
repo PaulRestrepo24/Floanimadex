@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto/Styles proyect/Botón_inicio.css">
+    <title>Loro cabeza azul - Floanimadex</title>
+
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6ffe6;
+        }
+        header {
+            background-color: #b8e28a;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 80px;
+            height: 65px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .logo h1 {
+            color: #1a793a;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .profile img {
+            width: 80px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .species-detail {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .species-detail {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .species-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .user-info img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        .species-info h2 {
+            color: #000000;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .species-info p.scientific-name {
+            color: #000000;
+            font-style: italic;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .other-species {
+            margin-top: 3rem;
+        }
+        .other-species h3 {
+            color: #2e7d32;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .species-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .species-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .species-card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .species-card p {
+            padding: 0.5rem;
+            text-align: center;
+            margin: 0;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            font-size: xx-large;
+        }
+        .nav-buttons button {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-left: 1rem;
+            width: 38px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons button:hover {
+            background-color: #5ec57e;
+        }
+        .button a{
+            color:#000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-buttons">
+            <a href="../Proyecto/Floanimadex - Inicio.html" class="home-button"><img src="../Proyecto/imagenes/Kza.png" width="25px" height="25px"></a>
+    </div>
+        <div class="logo">
+            <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+            <h1>Floanimadex</h1>
+        </div>
+        <nav>
+            <<ul>
+                <li><button class="button">
+                  <a href="../Proyecto/Floanimadex - Nosotros.html">
+                  <span class="button-content"><li><b>Nosotros</b></li></span>
+              </a>  
+              </button></li>
+
+                <li><button class="button">
+                  <a href="../Proyecto/Floanimadex - Terminos y Condiciónes.html">
+                  <span class="button-content"><li><b>Terminos y Condiciónes</b></li></span>
+                </button></li>
+              </a>
+                
+                <li><button class="button">
+                  <a href="../Proyecto/Floanimadex - Historial.html">
+                  <span class="button-content"><li><b>Historial</b></li></span>
+                </button></li>
+              </a>
+                
+
+          </ul>
+        </nav>
+        <a href="../Proyecto/Floanimadex - Perfil_Invitado.html" class="profile">
+            <img src="../Proyecto/imagenes/Proflie-removebg-preview.png" alt="Profile">
+        </a>
+    </header>
+
+    <main>
+        <div class="species-detail">
+            <div>
+                <img src="../Proyecto/imagenes/Loro_cabeza_azul.png" alt="Loro cabeza azul" class="species-image">
+                <div class="user-info">
+                    <img src="../Proyecto/imagenes/Proflie-removebg-preview.png" alt="@nombre_usuario">
+                    <span>@nombre_usuario</span>
+                </div>
+            </div>
+            <div class="species-info">
+                <h2><b>Loro cabeza azul</b></h2>
+                <p class="scientific-name">(Pionus menstruus)</p>
+                <p>
+                    El loro cabeza azul, también conocido como guacamayo de cabeza azul, es una especie de loro grande y llamativa que se encuentra en América del Sur, específicamente en la región amazónica de Brasil, Bolivia y Paraguay. Se caracteriza por su plumaje predominantemente azul en la cabeza y la parte superior del cuerpo, con un tono amarillo en la parte inferior y algunas áreas rojas en las alas. Son aves sociales y juguetonas, con una gran capacidad para imitar sonidos y vocalizaciones humanas. Sin embargo, están amenazadas por la pérdida de hábitat y el comercio ilegal de mascotas.
+                </p>
+            </div>
+        </div>
+
+        <div class="other-species">
+            <h3>Otras especies</h3>
+            <div class="species-grid">
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/Girasol.png" alt="Girasol">
+                    <p>Girasol</p>
+                </div>
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/diente_d_leon.jpg" alt="Diente de león">
+                    <p>Diente de león</p>
+                </div>
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/cardenal_rojo.jpg" alt="Cardenal Rojo">
+                    <p>Cardenal Rojo</p>
+                </div>
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/Conejo_Belier.png" alt="Conejo Belier">
+                    <p>Conejo Belier</p>
+                </div>
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/Colibrí.png" alt="Colibrí">
+                    <p>Colibrí</p>
+                </div>
+                <div class="species-card">
+                    <img src="../Proyecto/imagenes/Orquidea.png" alt="Orquídea">
+                    <p>Orquídea</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Función para obtener la fecha y hora actual
+function getCurrentDateTime() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hour = String(date.getHours()).padStart(2, '0');
+    const minute = String(date.getMinutes()).padStart(2, '0');
+    const second = String(date.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+// Función para agregar un registro al historial
+function addRecordToHistory(section) {
+    const currentDateTime = getCurrentDateTime();
+    const record = {
+        section: section,
+        timestamp: currentDateTime
+    };
+    const storedHistory = localStorage.getItem('activityHistory');
+    let history = storedHistory ? JSON.parse(storedHistory) : [];
+    history.push(record);
+    localStorage.setItem('activityHistory', JSON.stringify(history));
+}
+
+// Llamar a la función para agregar un registro al historial
+addRecordToHistory('Floanimadex | Inicio - Loro Cabeza Azul');
+        </script>
+    </main>
+</body>
+</html>

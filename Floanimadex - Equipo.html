@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto/Styles proyect/Botón_inicio.css">
+    <title>Floanimadex - Equipo</title>
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9;
+}
+header {
+    background-color: #b8e28a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color: #15803d;
+}
+nav a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+main {
+    padding: 2rem;
+}
+
+h1 {
+    background-color: #b8e28a;
+    color: #15803d;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo-button {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: inherit;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+}
+.logo-button img {
+    width: 80px;
+    margin-right: 10px;
+}
+.logo-button h1 {
+    margin: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 80px;
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Proyecto/Floanimadex - Inicio.html" class="logo-button">
+                <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+                <h1>Floanimadex</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>  
+              <a href="../Proyecto/Floanimadex - Nosotros.html">              
+              <button class="button">
+                  <span class="button-content"><b>Nosotros</b></span>
+              </button></li>
+              </a>
+              <a href="../Proyecto/Floanimadex - Terminos y Condiciónes.html">
+                  <button class="button">
+                      <span class="button-content"><b>Terminos y Condiciónes</b></span>
+                  </button></li>
+              </a>
+              <a href="../Proyecto/Floanimadex - Historial.html">
+              <button class="button">
+                  <span class="button-content"><b>Historial</b></span>
+              </button></li>
+              </a>
+          </ul>
+          </nav>
+    </header>
+    <main>
+        <h1>Equipo FLOANIMADEX</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="../Proyecto/imagenes/P.png" alt="Foto de Paul Santiago">
+                <h3>Paul Santiago Restrepo Caicedo</h3>
+                <p>Programador Diseñador</p>
+            </div>
+            <div class="team-member">
+                <img src="/placeholder.svg?height=150&width=150" alt="Foto de Juan Diego">
+                <h3>Juan Diego Valencia Soto</h3>
+                <p>Desarrollador de Base de datos</p>
+            </div>
+            <div class="team-member">
+                <img src="/placeholder.svg?height=150&width=150" alt="Foto ">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <script>
+            // Función para obtener la fecha y hora actual
+function getCurrentDateTime() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hour = String(date.getHours()).padStart(2, '0');
+    const minute = String(date.getMinutes()).padStart(2, '0');
+    const second = String(date.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+// Función para agregar un registro al historial
+function addRecordToHistory(section) {
+    const currentDateTime = getCurrentDateTime();
+    const record = {
+        section: section,
+        timestamp: currentDateTime
+    };
+    const storedHistory = localStorage.getItem('activityHistory');
+    let history = storedHistory ? JSON.parse(storedHistory) : [];
+    history.push(record);
+    localStorage.setItem('activityHistory', JSON.stringify(history));
+}
+
+// Llamar a la función para agregar un registro al historial
+addRecordToHistory('Floanimadex | Equipo');
+        </script>
+    </main>
+</body>
+</html>

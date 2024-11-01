@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto/Styles proyect/Botón_inicio.css">
+    <title>Floanimadex - Historial</title>
+    <link rel="webside icon" type="png" href="../Proyecto/imagenes/logo.png">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddffdd;
+}
+header {
+  background-color: #b8e28a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #15803d;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 90px;
+  margin-right: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.profile img {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+.content {
+  background-color: white;
+  margin: 20px;
+  padding: 60px;
+  border-radius: 20px 20px 0 0;
+}
+#history-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow-y: auto;
+  height: 300px;
+}
+.history-entry {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+}
+.history-entry strong {
+  display: block;
+}
+.history-entry span {
+  font-size: 0.8em;
+  color: #666;
+}
+#clear-history {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background-color: #b8e28a;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+a {
+  color: #000;  
+}
+.logo-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.logo-button img {
+  width: 80px;
+  margin-right: 10px;
+}
+.logo-button h1 {
+  margin: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 80px;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="../Proyecto/Floanimadex - Inicio.html" class="logo-button">
+            <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+            <h1>Floanimadex</h1>
+        </a>
+    </div>
+    <nav>
+        <ul>   
+            <a href="../Proyecto/Floanimadex - Nosotros.html">              
+            <li><button class="button">
+                <span class="button-content"><b>Nosotros</b></span>
+            </button></li>
+            </a>
+
+            <a href="../Proyecto/Floanimadex - Terminos y Condiciónes.html">
+                <li><button class="button">
+                    <span class="button-content"><b>Terminos y Condiciónes</b></span>
+                </button></li>
+            </a>
+
+            <a href="../Proyecto/Floanimadex - Historial.html">
+            <li><button class="button">
+                <span class="button-content"><b>Historial</b></span>
+            </button></li>
+            </a>
+        </ul>
+    </nav>
+    <a href="../Proyecto/Floanimadex - Perfil iniciado.html" class="profile">
+        <img src="../Proyecto/imagenes/Proflie-removebg-preview.png" alt="Profile">
+    </a>
+</header>
+    <div class="content">
+        <h1>HISTORIAL DE ACTIVIDADES</h1>
+        <div id="history-container"></div>
+    </div>
+
+    <script>
+// Función para obtener la fecha y hora actual
+function getCurrentDateTime() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hour = String(date.getHours()).padStart(2, '0');
+    const minute = String(date.getMinutes()).padStart(2, '0');
+    const second = String(date.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+// Función para agregar un registro al historial
+function addRecordToHistory(section) {
+    const currentDateTime = getCurrentDateTime();
+    const record = {
+        section: section,
+        timestamp: currentDateTime
+    };
+    const storedHistory = localStorage.getItem('activityHistory');
+    let history = storedHistory ? JSON.parse(storedHistory) : [];
+    history.push(record);
+    localStorage.setItem('activityHistory', JSON.stringify(history));
+}
+
+// Llamar a la función para agregar un registro al historial
+addRecordToHistory('Floanimedex | Historial');
+
+
+// Función para mostrar los registros del historial
+function displayHistory() {
+    const storedHistory = localStorage.getItem('activityHistory');
+    const history = storedHistory ? JSON.parse(storedHistory) : [];
+    const historyContainer = document.getElementById('history-container');
+    historyContainer.innerHTML = '';
+    history.forEach(record => {
+        const recordElement = document.createElement('div');
+        recordElement.innerHTML = `
+            <strong>${record.section}</strong>
+            <span>${record.timestamp}</span>
+        `;
+        historyContainer.appendChild(recordElement);
+    });
+}
+
+// Llamar a la función para mostrar los registros del historial
+displayHistory();
+    </script>
+</body>
+</html>

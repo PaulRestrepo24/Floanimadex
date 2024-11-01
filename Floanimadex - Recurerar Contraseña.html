@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Base" href="../Proyecto/Base de datos/Contraolvi.php">
+    <title>Floanimadex - Recuperar Contraseña</title>
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../Proyecto/imagenes/fo_2.0.jpg');
+            background-size: cover;
+            background-position: center;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #e8f5e9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input {
+            padding: 0.5rem;
+            border: 1px solid #a5d6a7;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo" class="logo">
+        <h1>Floanimadex</h1>
+        <h2>¿Se te olvidó tu contraseña?</h2>
+        <form>
+            <input type="text" placeholder="Usuario" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="text" placeholder="Nueva contraseña" required>
+            <input type="password" placeholder="Confirmación de contraseña" required>
+            <a href="Floanimadex - Inicio de sesión y registro.html">
+            <button type="submit">Iniciar</button>
+        </a>
+        </form>
+    </div>
+</body>
+</html>

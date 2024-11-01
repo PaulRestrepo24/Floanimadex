@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto/Styles proyect/Botón_inicio.css">
+    <title>Floanimadex</title>
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcf4ce;
+}
+header {
+    background-color: #b8e28a;
+    color: #1a793a;
+    padding: 0.4 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.logo-section img {
+    width: 80px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.logo-section h1 {
+    color: #1a793a;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.profile img {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section {
+    background-color: #aad8ac;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.section-title {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.quienes-somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quienes-somos-text {
+    width: 60%;
+}
+.image-container {
+    width: 35%;
+    text-align: center;
+}
+.image-container img {
+    max-width: 90%;
+    border: 2px dashed #4caf50;
+    padding: 10px;
+}
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+}
+.mission, .vision {
+    width: 48%;
+}
+.contact-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+.logo-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.logo-button img {
+    width: 80px;
+    margin-right: 10px;
+}
+.logo-button h1 {
+    margin: 0;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Proyecto/Floanimadex - Inicio.html" class="logo-button">
+                <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+                <h1>Floanimadex</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>   
+                <a href="../Proyecto/Floanimadex - Nosotros.html">              
+                <li><button class="button">
+                    <span class="button-content"><b>Nosotros</b></span>
+                </button></li>
+                </a>
+
+                <a href="../Proyecto/Floanimadex - Terminos y Condiciónes.html">
+                    <li><button class="button">
+                        <span class="button-content"><b>Terminos y Condiciónes</b></span>
+                    </button></li>
+                </a>
+
+                <a href="../Proyecto/Floanimadex - Historial.html">
+                <li><button class="button">
+                    <span class="button-content"><b>Historial</b></span>
+                </button></li>
+                </a>
+            </ul>
+        </nav>
+        <a href="../Proyecto/Floanimadex - Perfil iniciado.html" class="profile">
+            <img src="../Proyecto/imagenes/Proflie-removebg-preview.png" alt="Profile">
+        </a>
+    </header>
+    <main>
+        <section class="section">
+            <h2 class="section-title">Nosotros</h2>
+            <div class="quienes-somos">
+                <div class="quienes-somos-text">
+                    <p>Floanimadex es un medio en donde buscamos conectar al ser humano con sus origenes y con su medio que los rodea, un medio que está constituido por animales y plantas. ¡Es una oportunidad para que dialogues sobre tus conocimientos de la fauna y flora, gratis!</p>
+                </div>
+                <div class="image-container">
+                    <img src="../Proyecto/imagenes/image (9).png" alt="Colorful Parrots">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section-title">Misión y Visión</h2>
+            <div class="mission-vision">
+                <div class="mission">
+                    <h3>Nuestra misión</h3>
+                    <p>Nuestra misión es aumentar el interés en la fauna y flora. Fomentando los beneficios del cultivo de plantas y los daños hacia la fauna causados por nosotros.</p>
+                </div>
+                <div class="vision">
+                    <h3>Nuestra visión</h3>
+                    <p>Nuestra visión es hacer entrar en razón al ser humano del daño que causamos, ocasionando la privatización de estos hermosos momentos que nos brinda la naturaleza.</p>
+                </div>
+            </div>
+        </section>
+        <a href="../Proyecto/Floanimadex - Equipo.html"
+       <button class="contact-button"> ¿Quienes somos?</button>
+    </a>
+    <script>
+        // Función para obtener la fecha y hora actual
+function getCurrentDateTime() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hour = String(date.getHours()).padStart(2, '0');
+    const minute = String(date.getMinutes()).padStart(2, '0');
+    const second = String(date.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+// Función para agregar un registro al historial
+function addRecordToHistory(section) {
+    const currentDateTime = getCurrentDateTime();
+    const record = {
+        section: section,
+        timestamp: currentDateTime
+    };
+    const storedHistory = localStorage.getItem('activityHistory');
+    let history = storedHistory ? JSON.parse(storedHistory) : [];
+    history.push(record);
+    localStorage.setItem('activityHistory', JSON.stringify(history));
+}
+
+// Llamar a la función para agregar un registro al historial
+addRecordToHistory('Floanimadex | Nosotros');
+    </script>
+    </main>
+</body>
+</html>

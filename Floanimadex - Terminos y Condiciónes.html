@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Proyecto/Styles proyect/Botón_inicio.css">
+    <title>Floanimadex - Términos y condiciones</title>
+    <link rel="webside icon" type="png"
+    href="../Proyecto/imagenes/logo.png">
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7e6;
+}
+header {
+  background-color: #b8e28a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.logo-section img {
+    width: 80px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.logo-section h1 {
+    color: #1a793a;
+    margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.profile img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+}
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.terms-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.file-link {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.file-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.contact-form {
+    border: 1px dashed #ccc;
+    padding: 10px;
+}
+.contact-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.social-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.Btn {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.3s;
+}
+.svgIcon {
+  fill: #2196f3;
+}
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid #2196f3;
+  border-left: 2px solid #2196f3;
+  border-right: 2px solid #2196f3;
+}
+.Btn:hover {
+  background-color: #01579b;
+  transition-duration: 0.3s;
+}
+.Btn:hover .icon2 {
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+.Btn:hover .svgIcon {
+  fill: white;
+  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.logo-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.logo-button img {
+  width: 80px;
+  margin-right: 10px;
+}
+.logo-button h1 {
+  margin: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 80px;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Proyecto/Floanimadex - Inicio.html" class="logo-button">
+                <img src="../Proyecto/imagenes/logo.png" alt="Floanimadex Logo">
+                <h1>Floanimadex</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>   
+                <a href="../Proyecto/Floanimadex - Nosotros.html">              
+                <li><button class="button">
+                    <span class="button-content"><b>Nosotros</b></span>
+                </button></li>
+                </a>
+
+                <a href="../Proyecto/Floanimadex - Terminos y Condiciónes.html">
+                    <li><button class="button">
+                        <span class="button-content"><b>Terminos y Condiciónes</b></span>
+                    </button></li>
+                </a>
+
+                <a href="../Proyecto/Floanimadex - Historial.html">
+                <li><button class="button">
+                    <span class="button-content"><b>Historial</b></span>
+                </button></li>
+                </a>
+            </ul>
+        </nav>
+        <a href="../Proyecto/Floanimadex - Perfil iniciado.html" class="profile">
+            <img src="../Proyecto/imagenes/Proflie-removebg-preview.png" alt="Profile">
+        </a>
+    </header>
+    <main>
+        <div class="terms-button">Términos y condiciones</div>
+        <div class="file-link">
+          <a href="../Proyecto/Términos y Condiciones de Uso de FLOANIMADEX.pdf" target=" _blank" download>
+            <button class="Btn">
+              <svg
+                class="svgIcon" 
+                viewBox="0 0 384 512"
+                height="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                ></path>
+              </svg>
+              <span class="icon2"></span>
+            </button>
+          </a>
+          <li><img src="../Proyecto/imagenes/pdf.png" alt="PDF Icon"></li>
+          <span>0672 Términos y condiciones - FLOANIMADEX.pdf</span>
+        </div>
+        <div class="terms-button">Contáctanos</div>
+        <div class="contact-form">
+            <p>Comentanos tu opinión</p>
+            <textarea placeholder="Escribe algo..."></textarea>
+        </div>
+        <div class="social-contact">
+            <div>
+                <img src="../Proyecto/imagenes/Instagram_logo.png" width=20px alt="Instagram">
+                <span>@floanimadex</span>
+            </div>
+            <div>
+                <img src="../Proyecto/imagenes/Gmail.png" width=20px alt="Email">
+                <span>atencionalvisitante.fmx@floanimadex.com</span>
+            </div>
+        </div>
+        <script>
+          // Función para obtener la fecha y hora actual
+function getCurrentDateTime() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hour = String(date.getHours()).padStart(2, '0');
+    const minute = String(date.getMinutes()).padStart(2, '0');
+    const second = String(date.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+}
+
+// Función para agregar un registro al historial
+function addRecordToHistory(section) {
+    const currentDateTime = getCurrentDateTime();
+    const record = {
+        section: section,
+        timestamp: currentDateTime
+    };
+    const storedHistory = localStorage.getItem('activityHistory');
+    let history = storedHistory ? JSON.parse(storedHistory) : [];
+    history.push(record);
+    localStorage.setItem('activityHistory', JSON.stringify(history));
+}
+
+// Llamar a la función para agregar un registro al historial
+addRecordToHistory('Floanimadex | Terminos y Condiciones');
+        </script>
+    </main>
+</body>
+</html>
